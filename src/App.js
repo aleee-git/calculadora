@@ -18,6 +18,8 @@ function App() {
         <div className="fila">
           {/* 1 es el valor de {props.children} */}
           <Boton>1</Boton>
+          <Boton>+</Boton>
+
         </div>
         <div className="fila"></div>
         <div className="fila"></div>

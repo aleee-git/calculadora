@@ -11,8 +11,9 @@ function Boton (props) {
 
     return (
         <div
-        /* Deternimar si props.children es operador sino es null*/
-        className={`boton-container ${esOperador(props.children) ? "operador" : null}`}>
+        /* Deternimar si props.children es operador sino es null
+        trimEnd = remueve espacios al final de la linea para no mostrar nad asi es null */
+        className={`boton-container ${esOperador(props.children) ? "operador" : ""}`.trimEnd()}>
             {props.children}
         </div>
     );

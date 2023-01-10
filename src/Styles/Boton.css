@@ -8,7 +8,7 @@
     font-weight: bold;
     background-color: #85586F;
     color: aliceblue;
-    border-radius: 25px;
+    border-radius: 20px;
     border: 2px solid white;
     margin: 4px;
     cursor: pointer;
@@ -16,8 +16,20 @@
     user-select: none;
 }
 
+.boton-container:hover {
+    background-color: #86C8BC;
+    color: black;
+    border: 2px solid black;
+}
+
 .operador {
     background-color: #F8EDE3;
     color: black;
     border: 2px solid black;
+}
+
+.operador:hover {
+    background-color: #8B7E74;
+    color: aliceblue;
+    border: 2px solid white;
 }

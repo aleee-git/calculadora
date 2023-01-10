@@ -13,7 +13,11 @@ function App() {
       </div>
 
       <div className="calculadora-container">
-
+        <div className="fila"></div>
+        <div className="fila"></div>
+        <div className="fila"></div>
+        <div className="fila"></div>
+        <div className="fila"></div>
       </div>
 
     </div>

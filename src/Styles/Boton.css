@@ -1,0 +1,23 @@
+.boton-container {
+    min-height: 50px;
+    display: flex;
+    /* Los elementos se distribuiran del mismo tamano */
+    flex: 1 1;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: #85586F;
+    color: aliceblue;
+    border-radius: 25px;
+    border: 2px solid white;
+    margin: 4px;
+    cursor: pointer;
+    /* Evita seleccionar algo */
+    user-select: none;
+}
+
+.operador {
+    background-color: #F8EDE3;
+    color: black;
+    border: 2px solid black;
+}

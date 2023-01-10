@@ -2,6 +2,7 @@ import './App.css';
 import logo from './Images/logo-cat.webp';
 import Boton from './Componentes/Boton';
 import Pantalla from './Componentes/Pantalla';
+import Clear from './Componentes/Clear';
 
 function App() {
   return (
@@ -48,7 +49,7 @@ function App() {
         </div>
 
         <div className="fila">
-        <Boton>Clear</Boton>
+        <Clear>Clear</Clear>
         </div>
 
       </div>

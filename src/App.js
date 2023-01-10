@@ -3,8 +3,18 @@ import logo from './Images/logo-cat.webp';
 import Boton from './Componentes/Boton';
 import Pantalla from './Componentes/Pantalla';
 import Clear from './Componentes/Clear';
+import { useState } from 'react';
 
 function App() {
+
+  /* Hook para input */
+  const [input, setInput] = useState ("");
+
+  /* Funcion para actualizar estado de input */
+  const agregarInput = valor => {
+    setInput (input + valor);
+  };
+
   return (
     <div className="App">
 
@@ -17,35 +27,37 @@ function App() {
 
       <br/> <br/>
       <div className="calculadora-container">
-        <Pantalla/>
+        {/* Pasar el estado */}
+        <Pantalla input={input}/>
 
         {/* 1, 2, 3 es el valor de {props.children} */}
         <div className="fila">
-          <Boton>1</Boton>
-          <Boton>2</Boton>
-          <Boton>3</Boton>
-          <Boton>+</Boton>
+          {/* Agregar manejarClick={agregarInput} como prop en cada boton */}
+          <Boton manejarClick={agregarInput}>1</Boton>
+          <Boton manejarClick={agregarInput}>2</Boton>
+          <Boton manejarClick={agregarInput}>3</Boton>
+          <Boton manejarClick={agregarInput}>+</Boton>
         </div>
 
         <div className="fila">
-          <Boton>4</Boton>
-          <Boton>5</Boton>
-          <Boton>6</Boton>
-          <Boton>-</Boton>
+          <Boton manejarClick={agregarInput}>4</Boton>
+          <Boton manejarClick={agregarInput}>5</Boton>
+          <Boton manejarClick={agregarInput}>6</Boton>
+          <Boton manejarClick={agregarInput}>-</Boton>
         </div>
 
         <div className="fila">
-          <Boton>7</Boton>
-          <Boton>8</Boton>
-          <Boton>9</Boton>
-          <Boton>*</Boton>
+          <Boton manejarClick={agregarInput}>7</Boton>
+          <Boton manejarClick={agregarInput}>8</Boton>
+          <Boton manejarClick={agregarInput}>9</Boton>
+          <Boton manejarClick={agregarInput}>*</Boton>
         </div>
 
         <div className="fila">
-          <Boton>=</Boton>
-          <Boton>0</Boton>
-          <Boton>.</Boton>
-          <Boton>/</Boton>
+          <Boton manejarClick={agregarInput}>=</Boton>
+          <Boton manejarClick={agregarInput}>0</Boton>
+          <Boton manejarClick={agregarInput}>.</Boton>
+          <Boton manejarClick={agregarInput}>/</Boton>
         </div>
 
         <div className="fila">

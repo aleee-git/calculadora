@@ -61,7 +61,11 @@ function App() {
         </div>
 
         <div className="fila">
-        <Clear>Clear</Clear>
+        {/* manejarClear es una funcion anonima/vacia que reinicia el input en una cadena vacia
+        Tambien puede ser otra manera de hacer manejarClick*/}
+        <Clear manejarClear = {() => setInput("")}>
+          Clear
+        </Clear>
         </div>
 
       </div>

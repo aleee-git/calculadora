@@ -1,0 +1,15 @@
+.pantalla {
+    height: 75px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+    background-color: #65647C;
+    /* Sup der inf izq*/
+    padding: 11px 30px 11px 11px;
+    margin: 3px solid rgb(207, 14, 14);
+    box-shadow: -1px 4px 1px 1px #B5D5C5;
+}

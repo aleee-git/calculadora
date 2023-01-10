@@ -1,4 +1,5 @@
 import React from "react";
+import '../Styles/Pantalla.css'
 
 /* Funcion como constante flecha */
 const Pantalla = ({input}) => (

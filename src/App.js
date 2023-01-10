@@ -1,6 +1,7 @@
 import './App.css';
 import logo from './Images/logo-cat.webp';
 import Boton from './Componentes/Boton';
+import Pantalla from './Componentes/Pantalla';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
 
       <br/> <br/>
       <div className="calculadora-container">
+        <Pantalla/>
+
         {/* 1, 2, 3 es el valor de {props.children} */}
         <div className="fila">
           <Boton>1</Boton>
@@ -47,7 +50,7 @@ function App() {
         <div className="fila">
         <Boton>Clear</Boton>
         </div>
-        
+
       </div>
 
     </div>

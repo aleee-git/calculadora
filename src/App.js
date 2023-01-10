@@ -1,5 +1,4 @@
 import './App.css';
-import logo from './Images/logo-cat.webp';
 import Boton from './Componentes/Boton';
 import Pantalla from './Componentes/Pantalla';
 import Clear from './Componentes/Clear';
@@ -17,13 +16,6 @@ function App() {
 
   return (
     <div className="App">
-
-      <div className="logo-container">
-        <img
-        src={logo}
-        className="logo"
-        alt="Logo-gatito"/>
-      </div>
 
       <br/> <br/>
       <div className="calculadora-container">

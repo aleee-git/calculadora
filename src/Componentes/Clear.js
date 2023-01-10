@@ -1,4 +1,5 @@
 import React from "react";
+import '../Styles/Clear.css';
 
 /* Funcion como constante flecha */
 const BotonClear = (props) => (

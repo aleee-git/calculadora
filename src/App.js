@@ -3,6 +3,9 @@ import Boton from './Componentes/Boton';
 import Pantalla from './Componentes/Pantalla';
 import Clear from './Componentes/Clear';
 import { useState } from 'react';
+/* Importar paquete para evaluaciones matematicas de mathjs
+Instalar paquete con npm install mathjs */
+import { evaluate } from 'mathjs';
 
 function App() {
 
@@ -12,6 +15,11 @@ function App() {
   /* Funcion para actualizar estado de input */
   const agregarInput = valor => {
     setInput (input + valor);
+  };
+
+  /* Funcion para calcular */
+  const calcularResultado = () => {
+    setInput(evaluate(input));
   };
 
   return (
@@ -46,7 +54,7 @@ function App() {
         </div>
 
         <div className="fila">
-          <Boton manejarClick={agregarInput}>=</Boton>
+          <Boton manejarClick={calcularResultado}>=</Boton>
           <Boton manejarClick={agregarInput}>0</Boton>
           <Boton manejarClick={agregarInput}>.</Boton>
           <Boton manejarClick={agregarInput}>/</Boton>

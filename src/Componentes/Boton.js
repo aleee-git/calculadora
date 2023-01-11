@@ -12,14 +12,14 @@ function Boton (props) {
     };
 
     return (
-        <div
+        <button
         /* Deternimar si props.children es operador sino es null
         trimEnd = remueve espacios al final de la linea para no mostrar nad asi es null */
         className={`boton-container ${esOperador(props.children) ? "operador" : ""}`.trimEnd()}
         /* manejarClick es una funcion nueva/anonima que se llama */
         onClick={() => props.manejarClick(props.children)}>
             {props.children}
-        </div>
+        </button>
     );
 
     /* OPCION 2 con condicionales */

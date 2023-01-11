@@ -21,6 +21,26 @@ function Boton (props) {
             {props.children}
         </div>
     );
+
+    /* OPCION 2 con condicionales */
+    /*
+    if (esOperador(props.children)) {
+        return (
+        <div
+        className="boton-container operador"
+        onClick={() => props.manejarClick(props.children)}>
+            {props.children}
+        </div>
+    );
+    } else {
+        return (
+        <div
+        className="boton-container"
+        onClick={() => props.manejarClick(props.children)}>
+            {props.children}
+        </div>
+    }
+     */
 }
 
 export default Boton;

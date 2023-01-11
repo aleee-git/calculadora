@@ -19,7 +19,12 @@ function App() {
 
   /* Funcion para calcular */
   const calcularResultado = () => {
-    setInput(evaluate(input));
+    /* Condicionar para evitar errores, si el input no esta vacio hacer el calculo*/
+    if (input) {
+      setInput(evaluate(input));
+    } else {
+      alert ("Tía Paola por favor ingrese un número");
+    }
   };
 
   return (
